@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Все вопросы</title>
+</head>
+<body>
+    <h1>Все вопросы</h1>
+    <ul>
+        {% for question in questions %}
+        <li>
+            <h3>{{ question.title }}</h3>
+            <p>{{ question.main_text }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

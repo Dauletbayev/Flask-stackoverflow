@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a question</title>
+</head>
+<body>
+    <h1>Добавьте свой вопрос</h1>
+    <form method="post">
+    {{ form.title.label }}<br>
+    {{ form.title }}<br>
+    {{ form.main_text.label }}<br>
+    {{ form.main_text }}<br>
+    {{ form.csrf_token }}
+    {{ form.button }}<br>
+    </form>
+</body>
+</html>
